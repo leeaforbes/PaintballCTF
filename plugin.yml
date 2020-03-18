@@ -1,0 +1,10 @@
+name: PaintballCaptureTheFlag
+main: com.javabean.paintballctf.PaintballCaptureTheFlag
+author: JavaBean
+description: Allows admins to create Capture the Flag arenas WITH PAINTBALL GUNS.
+version: 1.0
+api-version: 1.15
+commands:
+   pbctf:
+      description: JavaBean Paintball CTF command.
+      usage: /pbctf
