@@ -89,7 +89,7 @@ public class PaintballCaptureTheFlag extends JavaPlugin{
 		String arenaFileName = "arena.xml";
 		File arenaInfoFile = getDataFolder();
 		if(arenaInfoFile.mkdir()){
-			getLogger().info("Created \\CaptureTheFlag directory.");
+			getLogger().info("Created \\PaintballCTF directory.");
 		}
 		
 		arenaInfoFile = new File(arenaInfoFile.toString() + "\\" + arenaFileName);
@@ -211,7 +211,7 @@ public class PaintballCaptureTheFlag extends JavaPlugin{
 		String arenaFileName = "arena.xml";
 		File arenaInfoFile = getDataFolder();
 		if(arenaInfoFile.mkdir()){
-			getLogger().info("Created \\CaptureTheFlag directory.");
+			getLogger().info("Created \\PaintballCTF directory.");
 		}
 		
 		arenaInfoFile = new File(arenaInfoFile.toString() + "\\" + arenaFileName);
@@ -340,7 +340,7 @@ public class PaintballCaptureTheFlag extends JavaPlugin{
 		String arenaFileName = "signs.xml";
 		File arenaInfoFile = getDataFolder();
 		if(arenaInfoFile.mkdir()){
-			getLogger().info("Created \\CaptureTheFlag directory.");
+			getLogger().info("Created \\PaintballCTF directory.");
 		}
 		
 		arenaInfoFile = new File(arenaInfoFile.toString() + "\\" + arenaFileName);
@@ -391,7 +391,7 @@ public class PaintballCaptureTheFlag extends JavaPlugin{
 		String arenaFileName = "signs.xml";
 		File arenaInfoFile = getDataFolder();
 		if(arenaInfoFile.mkdir()){
-			getLogger().info("Created \\CaptureTheFlag directory.");
+			getLogger().info("Created \\PaintballCTF directory.");
 		}
 		
 		arenaInfoFile = new File(arenaInfoFile.toString() + "\\" + arenaFileName);

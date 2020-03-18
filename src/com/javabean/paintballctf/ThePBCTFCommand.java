@@ -60,7 +60,7 @@ public class ThePBCTFCommand implements CommandExecutor{
 			else if(args[0].equalsIgnoreCase("leave")){
 				Arena playerGameArena = gameManager.getPlayerGameArena(player);
 				if(playerGameArena == null){
-					player.sendMessage(ChatColor.RED + "You are not in a CTF game!");
+					player.sendMessage(ChatColor.RED + "You are not in a PB CTF game!");
 				}
 				else{
 					//player leaves arena game
@@ -74,7 +74,7 @@ public class ThePBCTFCommand implements CommandExecutor{
 				//gets what arena game they are in if they are in one
 				Arena playerGameArena = gameManager.getPlayerGameArena(player);
 				if(playerGameArena == null){
-					player.sendMessage(ChatColor.RED + "You are not in a CTF game!");
+					player.sendMessage(ChatColor.RED + "You are not in a PB CTF game!");
 				}
 				else if(gameManager.isInProgress(playerGameArena)){
 					player.sendMessage(ChatColor.RED + "You cannot switch teams while a game is in progress!");
@@ -99,14 +99,14 @@ public class ThePBCTFCommand implements CommandExecutor{
 			else if(args[0].equalsIgnoreCase("start")){
 				Arena playerGameArena = gameManager.getPlayerGameArena(player);
 				if(playerGameArena == null){
-					player.sendMessage(ChatColor.RED + "You are not in a CTF game!");
+					player.sendMessage(ChatColor.RED + "You are not in a PB CTF game!");
 				}
 				else if(gameManager.isInProgress(playerGameArena)){
 					player.sendMessage(ChatColor.RED + "Game is already in progress!");
 				}
 //				TODO insert this back in upon further testing
 //				else if(gameManager.getNumPlayersInArena(playerGameArena) < 2){
-//					player.sendMessage(ChatColor.RED + "There must be at least two players to start a CTF game!");
+//					player.sendMessage(ChatColor.RED + "There must be at least two players to start a PB CTF game!");
 //				}
 				else{
 					//start game
@@ -120,15 +120,15 @@ public class ThePBCTFCommand implements CommandExecutor{
 					player.sendMessage(ChatColor.AQUA + "There is " + gameManager.timeLeft(playerGameArena) + " time left in arena: " + playerGameArena.getName() + ".");
 				}
 				else{
-					player.sendMessage(ChatColor.RED + "The command /ctf timeleft is used while in a CTF game.");
+					player.sendMessage(ChatColor.RED + "The command /pbctf timeleft is used while in a PB CTF game.");
 				}
 			}
 			else if(args[0].equalsIgnoreCase("info")){
 				player.sendMessage(ChatColor.GOLD + "-----------------------------------------------");
-				player.sendMessage(ChatColor.GOLD + "                 ***CTF Games Info***");
+				player.sendMessage(ChatColor.GOLD + "                ***PB CTF Games Info***");
 				if(gameManager.getNumGames() == 0){
 					player.sendMessage(ChatColor.RED + "There are no games at the moment.");
-					player.sendMessage(ChatColor.LIGHT_PURPLE + "Click a join sign in the hub or /ctf join <arena name>");
+					player.sendMessage(ChatColor.LIGHT_PURPLE + "Click a join sign in the hub or /pbctf join <arena name>");
 				}
 				else{
 					gameManager.getInfo(player);

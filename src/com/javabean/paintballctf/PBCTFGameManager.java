@@ -52,7 +52,7 @@ public class PBCTFGameManager implements ActionListener{
 		}
 		//already in a game
 		else if(getPlayerGameArena(player) != null){
-			player.sendMessage(ChatColor.RED + "You are already in arena: " + arena.getName() + ". Leave with /ctf leave.");
+			player.sendMessage(ChatColor.RED + "You are already in arena: " + arena.getName() + ". Leave with /pbctf leave.");
 		}
 		//arena already has a game going
 		else if(isInProgress(arena)){
@@ -136,7 +136,7 @@ public class PBCTFGameManager implements ActionListener{
 			else{
 				message.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(
 						ChatColor.DARK_GREEN + "" + ChatColor.MAGIC + "|" + ChatColor.GREEN + "Join " + arenaName + ChatColor.DARK_GREEN + "" + ChatColor.MAGIC + "|").create()));
-				message.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/ctf join " + arenaName));
+				message.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/pbctf join " + arenaName));
 			}
 			player.spigot().sendMessage(message);
 		}
